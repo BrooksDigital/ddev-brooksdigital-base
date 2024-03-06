@@ -4,6 +4,7 @@ project_files:
   - web-build/Dockerfile.brooksdigital-base
   - brooksdigital/base/watch.js
   - brooksdigital/base/.prettierrc
+  - brooksdigital/base/.ahoy.brooksdigital-base.readme.yml
   - web-build/Dockerfile.brooksdigital-base
 global_files:
 post_install_actions:
