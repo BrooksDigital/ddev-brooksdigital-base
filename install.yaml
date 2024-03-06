@@ -6,6 +6,7 @@ project_files:
   - brooksdigital/base/.prettierrc
   - brooksdigital/base/.ahoy.brooksdigital-base.readme.yml
   - web-build/Dockerfile.brooksdigital-base
+  - config.brooksdigital-base.yaml
 global_files:
 post_install_actions:
   - ddev get https://github.com/hanoii/ddev-starship/tarball/main
