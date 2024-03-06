@@ -4,23 +4,10 @@ commands:
   build:
     usage: 'Tidy up README.md'
     cmd: |
-      file=brooksdigital/base/.prettierrc
-      if [ -f .ddev/$file ]; then
-        config=--config=.ddev/$file
-      else
-        # Allow to run it locally
-        config=--config=$file
-      fi
-      prettier README.md --write $config
-      markdown-toc -i README.md
+      prettier /var/www/html/README.md --write --config=/var/www/html/.ddev/brooksdigital/base/.prettierrc
+      markdown-toc -i /var/www/html/README.md
 
   watch:
     usage: 'Watch README.md for changes'
     cmd: |
-      file=brooksdigital/base/watch.js
-      if [ -f .ddev/$file ]; then
-        node .ddev/$file
-      else
-        # Allow to run it locally
-        node $file
-      fi
+      node /var/www/html/.ddev/brooksdigital/base/watch.js

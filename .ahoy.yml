@@ -3,5 +3,6 @@ commands:
   readme:
     usage: 'README.md commands'
     imports:
-      - ./brooksdigital/base/.ahoy.brooksdigital-base.readme.yml
+      # addon needs to be installed locally on ddev with 'ddev get .'
+      - ./.ddev/brooksdigital/base/.ahoy.brooksdigital-base.readme.yml
 
