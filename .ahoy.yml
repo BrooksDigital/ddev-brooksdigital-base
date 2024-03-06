@@ -3,5 +3,5 @@ commands:
   readme:
     usage: 'README.md commands'
     imports:
-      - .ahoy.brooksdigital-base.readme.yml
+      - ./brooksdigital/base/.ahoy.brooksdigital-base.readme.yml
 

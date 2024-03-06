@@ -11,5 +11,12 @@
 
 ## What is ddev-brooksdigital-base?
 
+This is our main ddev add-on, used to have an opinionated configuration for all
+of our projects.
+
+It adds other addons, have useful shortcuts and things we want to have on all
+projects. This README will also serve as our central documentation for
+ddev-relative work.
+
 **Contributed and maintained by
-[@BrookksDigital](https://github.com/BrooksDigital)**
+[@BrooksDigital](https://github.com/BrooksDigital)**
