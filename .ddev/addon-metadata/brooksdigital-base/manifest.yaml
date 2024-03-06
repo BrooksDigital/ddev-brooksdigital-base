@@ -1,7 +1,7 @@
 name: brooksdigital-base
 repository: .
 version: ""
-install_date: "2024-03-06T10:34:41-03:00"
+install_date: "2024-03-06T10:41:26-03:00"
 project_files:
     - web-build/Dockerfile.brooksdigital-base
     - brooksdigital/base/watch.js

@@ -6,7 +6,7 @@ const timeout = 2000
 
 function watch() {
   console.log("Watching for changes on README.md...")
-  let watcher = fs.watch('README.md', (event, filename) => {
+  let watcher = fs.watch('/var/www/html/README.md', (event, filename) => {
     exec("ahoy readme build", (error, stdout, stderr) => {
       console.log(stdout);
     })
