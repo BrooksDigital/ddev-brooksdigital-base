@@ -1,17 +1,12 @@
 name: brooksdigital-base
 pre_install_actions:
 project_files:
-  - web-build/Dockerfile.brooksdigital-base
-  - brooksdigital/base/watch.js
-  - brooksdigital/base/.prettierrc
-  - brooksdigital/base/.ahoy.brooksdigital-base.readme.yml
-  - web-build/Dockerfile.brooksdigital-base
-  - config.brooksdigital-base.yaml
 global_files:
 post_install_actions:
   - ddev get https://github.com/hanoii/ddev-starship/tarball/main
   - ddev get https://github.com/hanoii/ddev-fish/tarball/main
   - ddev get https://github.com/hanoii/ddev-fzf/tarball/main
   - ddev get https://github.com/hanoii/ddev-ahoy/tarball/main
+  - ddev get https://github.com/hanoii/ddev-readme/tarball/main
 removal_actions:
 yaml_read_files:

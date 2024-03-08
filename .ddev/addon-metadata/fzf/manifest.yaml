@@ -1,7 +1,7 @@
 name: fzf
 repository: https://github.com/hanoii/ddev-fzf/tarball/main
 version: ""
-install_date: "2024-03-06T10:41:25-03:00"
+install_date: "2024-03-08T15:00:35-03:00"
 project_files:
     - web-build/Dockerfile.fzf
     - homeadditions/.bashrc.d/fzf
