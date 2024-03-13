@@ -1,6 +1,12 @@
 name: brooksdigital-base
 pre_install_actions:
 project_files:
+  - brooksdigital/base/hooks/post-import-db.sh
+  - brooksdigital/base/hooks/post-import-db.d/.gitkeep
+  - brooksdigital/base/hooks/post-import-db.d/drupal.sh
+  - brooksdigital/base/scripts/drupal/drush-uli.sh
+  - brooksdigital/base/.ahoy.brooksdigital-base.drupal.yml
+  - config.brooksdigital-base.yaml
 global_files:
 post_install_actions:
   - ddev get https://github.com/hanoii/ddev-starship/tarball/main

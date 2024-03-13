@@ -7,7 +7,8 @@
 
 - [What is ddev-brooksdigital-base?](#what-is-ddev-brooksdigital-base)
 - [ddev features](#ddev-features)
-  * [Dev workflow](#dev-workflow)
+  * [Dev additions](#dev-additions)
+  * [ahoy commands](#ahoy-commands)
   * [Readme](#readme)
   * [Shell additions](#shell-additions)
 - [ddev installation/use](#ddev-installationuse)
@@ -31,10 +32,20 @@ If you don't have `ddev` installed, read
 This add-on adds the following add-ons, refer to the README of each for more
 details.
 
-### Dev workflow
+### Dev additions
 
-- https://github.com/hanoii/ddev-ahoy: Adds `ahoy` to namespacer common tasks
+- https://github.com/hanoii/ddev-ahoy: Adds `ahoy` to namespace common tasks
   across projects.
+- Runs any executable script on
+  `.ddev/brooksdigital/base/hooks/post-import-db.d/` on ddev's post-import-db
+  hook through our own
+  [`.ddev/brooksdigital/base/hooks/post-import-db.sh/`](brooksdigital/base/hooks/posrt-import-db.sh).
+  This allows for the same scripts to be run from within the container, used by
+  other of our addons and/or projects' own scripts.
+
+### ahoy commands
+
+- `ahoy drupal drush:uli`: A fancier drush uli
 
 ### Readme
 
