@@ -8,6 +8,6 @@ if [[ "$DDEV_PROJECT_TYPE" == *"drupal"* ]] || [[ "$DDEV_BROOKSDIGITAL_PROJECT_T
   echo $uli | boxes -d peek -p h3v1
   echo -en "\033[0m"
 else
-  echo -e "\033[1;31mNot drupal!\033[0m"
+  echo -en "\033[1;31mNot drupal!\033[0m"
   exit 1
 fi
