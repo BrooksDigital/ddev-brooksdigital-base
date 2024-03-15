@@ -7,6 +7,8 @@ project_files:
   - brooksdigital/base/scripts/drupal/drush-uli.sh
   - brooksdigital/base/scripts/drupal/git-deleted-libraries-usage.sh
   - brooksdigital/base/.ahoy.brooksdigital-base.drupal.yml
+  - brooksdigital/base/assets/drupal/dev.services.yml
+  - brooksdigital/base/assets/drupal/settings.dev.php
   - config.brooksdigital-base.yaml
 global_files:
 post_install_actions:
