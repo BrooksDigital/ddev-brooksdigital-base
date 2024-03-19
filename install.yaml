@@ -9,9 +9,15 @@ project_files:
   - brooksdigital/base/.ahoy.brooksdigital-base.drupal.yml
   - brooksdigital/base/assets/drupal/dev.services.yml
   - brooksdigital/base/assets/drupal/settings.dev.php
+  - brooksdigital/base/.ahoy.ifnotpresent.yml
   - config.brooksdigital-base.yaml
 global_files:
 post_install_actions:
+  - |
+    if [ ! -f ../.ahoy.yml ]; then
+      echo -e "\033[0;35m[note] .ahoy.yml not present, a default one using the add-on commands was added!\033[0m"
+      cp brooksdigital/base/.ahoy.ifnotpresent.yml ../.ahoy.yml
+    fi
   - ddev get https://github.com/hanoii/ddev-starship/tarball/main
   - ddev get https://github.com/hanoii/ddev-fish/tarball/main
   - ddev get https://github.com/hanoii/ddev-fzf/tarball/main
