@@ -18,10 +18,7 @@ post_install_actions:
       echo -e "\033[0;35m[note] .ahoy.yml not present, a default one using the add-on commands was added!\033[0m"
       cp brooksdigital/base/.ahoy.ifnotpresent.yml ../.ahoy.yml
     fi
-  - ddev get https://github.com/hanoii/ddev-starship/tarball/main
-  - ddev get https://github.com/hanoii/ddev-fish/tarball/main
-  - ddev get https://github.com/hanoii/ddev-fzf/tarball/main
-  - ddev get https://github.com/hanoii/ddev-ahoy/tarball/main
+  - ddev get https://github.com/hanoii/ddev-pimp-my-shell/tarball/main
   - ddev get https://github.com/hanoii/ddev-readme/tarball/main
 removal_actions:
 yaml_read_files:
