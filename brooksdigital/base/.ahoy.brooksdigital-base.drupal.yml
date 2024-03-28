@@ -3,4 +3,4 @@ ahoyapi: v2
 commands:
   drush:uli:
     usage: A fancier drush:uli for our own ahoy commands
-    cmd: .ddev/pimp-my-shell/base/scripts/drush-uli.sh "$@"
+    cmd: .ddev/pimp-my-shell/scripts/drush-uli.sh "$@"
