@@ -1,16 +1,11 @@
 name: brooksdigital-base
 pre_install_actions:
 project_files:
-  - brooksdigital/base/hooks/post-import-db.sh
-  - brooksdigital/base/hooks/post-import-db.d/.gitkeep
-  - brooksdigital/base/hooks/post-import-db.d/drupal.sh
-  - brooksdigital/base/scripts/drupal/drush-uli.sh
   - brooksdigital/base/scripts/drupal/git-deleted-libraries-usage.sh
   - brooksdigital/base/.ahoy.brooksdigital-base.drupal.yml
   - brooksdigital/base/assets/drupal/dev.services.yml
   - brooksdigital/base/assets/drupal/settings.dev.php
   - brooksdigital/base/.ahoy.ifnotpresent.yml
-  - config.brooksdigital-base.yaml
 global_files:
 post_install_actions:
   - |
