@@ -69,7 +69,7 @@ else {
 }
 // Easilly accessible local private file system
 $settings['file_public_path'] = 'sites/default/files';
-$settings['file_private_path'] = 'sites/default/private';
+$settings['file_private_path'] = 'sites/default/files/private';
 
 // assumes a config split entity with an id of 'development'
 $config['config_split.config_split.development']['status'] = TRUE;
