@@ -1,10 +1,7 @@
 name: brooksdigital-base
 pre_install_actions:
 project_files:
-  - brooksdigital/base/scripts/drupal/git-deleted-libraries-usage.sh
   - brooksdigital/base/.ahoy.brooksdigital-base.drupal.yml
-  - brooksdigital/base/assets/drupal/dev.services.yml
-  - brooksdigital/base/assets/drupal/settings.dev.php
   - brooksdigital/base/.ahoy.ifnotpresent.yml
 global_files:
 post_install_actions:
@@ -14,6 +11,7 @@ post_install_actions:
       cp brooksdigital/base/.ahoy.ifnotpresent.yml ../.ahoy.yml
     fi
   - ddev get https://github.com/hanoii/ddev-pimp-my-shell/tarball/main
+  - ddev get https://github.com/hanoii/ddev-drupal/tarball/main
   - ddev get https://github.com/hanoii/ddev-readme/tarball/main
 removal_actions:
 yaml_read_files:
